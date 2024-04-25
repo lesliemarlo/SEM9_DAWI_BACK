@@ -1,5 +1,6 @@
 package com.centroinformacion.service;
 
+import java.util.Date;
 import java.util.List;
 
 import com.centroinformacion.entity.Revista;
@@ -18,6 +19,7 @@ public interface RevistaService {
 	//Validaciones Para Actualizar
 	public abstract List<Revista> listaRevistaPorNombreIgualActualiza(String nombre, int idRevista);
 	
-	
+	//Para la consulta
+	public abstract List<Revista> listaConsultaCompleja(String nombre, String frecuencia, Date fecIni, Date fecFin, int estado, int idPais, int idTipo);
 	
 }

@@ -1,5 +1,6 @@
 package com.centroinformacion.service;
 
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,6 +43,13 @@ public class RevistaServiceImpl implements RevistaService{
 	@Override
 	public List<Revista> listaRevistaPorNombreIgualActualiza(String nombre, int idRevista) {
 		return repository.listaPorNombreIgualActualiza(nombre, idRevista);
+	}
+
+	@Override
+	public List<Revista> listaConsultaCompleja(String nombre, String frecuencia, Date fecIni, Date fecFin, int estado,
+			int idPais, int idTipo) {
+
+		return repository.listaConsultaCompleja(nombre, frecuencia, fecIni, fecFin, estado, idPais, idTipo);
 	}
 	
 
