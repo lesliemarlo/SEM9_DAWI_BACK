@@ -45,12 +45,6 @@ public class RevistaServiceImpl implements RevistaService{
 		return repository.listaPorNombreIgualActualiza(nombre, idRevista);
 	}
 
-	@Override
-	public List<Revista> listaConsultaCompleja(String nombre, String frecuencia, Date fecIni, Date fecFin, int estado,
-			int idPais, int idTipo) {
-
-		return repository.listaConsultaCompleja(nombre, frecuencia, fecIni, fecFin, estado, idPais, idTipo);
-	}
 	
 
 }
